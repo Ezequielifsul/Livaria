@@ -3,7 +3,7 @@
 
                 <div class="card ">
               <div class="card-header">
-                <h4 class="card-title">Classificação</h4>
+                <h4 class="card-title">Administrador</h4>
               </div>
               <div class="card-body">
                     <a class="btn btn-primary btn-round text-center" href="add.jsp">
@@ -16,7 +16,10 @@
                         ID
                       </th>
                       <th>
-                        Classificação
+                        Nome
+                      </th>
+                      <th>
+                        Email
                       </th>
                       <th>
                         Foto
@@ -32,15 +35,16 @@
                         <c:forEach items="${lista}" var="obj">
                             <tr>
                                 <td>${obj.id}</td>
-                                <td>${obj.clas}</td>
-                                <td><img src="../../arquivos/${obj.endFoto}" height="42" width="42"></td>
+                                <td>${obj.nome}</td>
+                                <td>${obj.email}</td>
+                                <td><img src="../../arquivo/${obj.endFoto}" height="42" width="42"></td>
                                 <td>
-                                    <a class="btn btn-info btn-fab btn-icon btn-round" href="ClasWS?acao=edit&id=${obj.id}">
+                                    <a class="btn btn-info btn-fab btn-icon btn-round" href="AdminWS?acao=edit&id=${obj.id}">
                                         <i class="tim-icons icon-pencil"></i>
                                     </a>
                                 </td>
                                 <td>
-                                    <a class="btn btn-primary btn-fab btn-icon btn-round" href="ClasWS?acao=del&id=${obj.id}">
+                                    <a class="btn btn-primary btn-fab btn-icon btn-round" href="AdminWS?acao=del&id=${obj.id}">
                                         <i class="tim-icons icon-trash-simple"></i>
                                     </a>
                                 </td>

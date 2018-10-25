@@ -2,16 +2,28 @@
 <%@include file="../cabecalho.jsp" %>
 <div class="card">
     <div class="card-header">
-        <h5 class="title">Adicionar Classificação</h5>
+        <h5 class="title">Adiciona Administrador</h5>
     </div>
     <div class="card-body">
         <!--MODIFICAR PARA ADD-->
-        <form action="ClasWS" method="POST">
+        <form action="AdminWS" method="POST">
             <div class="row">
                 <div class="col-md-5 pr-md-1">
                     <div class="form-group">
-                        <label>Classificação</label>
-                        <input type="text" name="txtClas" required class="form-control" placeholder="Classificação" >
+                        <label>Nome</label>
+                        <input type="text" name="txtNome" required class="form-control" placeholder="Nome" >
+                    </div>
+                </div>
+                <div class="col-md-5 pr-md-1">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" name="txtEmail" required class="form-control" placeholder="Email" >
+                    </div>
+                </div>
+                <div class="col-md-5 pr-md-1">
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" name="txtSenha" required class="form-control" placeholder="Senha" >
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -25,7 +37,7 @@
             <button class="btn btn-primary btn-round text-center" type="submit">
                 <i class="tim-icons icon-cloud-upload-94"></i> Salvar
             </button>
-            <a class="btn btn-primary btn-round text-center" href="ClasWS?acao=list">
+            <a class="btn btn-primary btn-round text-center" href="AdminWS?acao=list">
                 <i class="tim-icons icon-bullet-list-67"></i> Listar
             </a>
         </form>

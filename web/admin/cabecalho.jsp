@@ -53,6 +53,24 @@
               <p>Editora</p>
             </a>
           </li>
+          <li>
+            <a href="./../classificacao/ClasWS?acao=list">
+              <i class="tim-icons icon-tag"></i>
+              <p>Classificacao</p>
+            </a>
+          </li>
+           <li>
+            <a href="./../Administrador/AdminWS?acao=list">
+              <i class="tim-icons icon-tag"></i>
+              <p>Administrador</p>
+            </a>
+          </li>
+          <li>
+            <a href="./../Livro/LivroWS?acao=list">
+              <i class="tim-icons icon-tag"></i>
+              <p>Livro</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -2,11 +2,11 @@
 <%@include file="../cabecalho.jsp" %>
             <div class="card">
               <div class="card-header">
-                <h5 class="title">Adicionar Classificação</h5>
+                <h5 class="title">Adiciona Genero</h5>
               </div>
               <div class="card-body">
                   <!--MODIFICAR PARA ADD-->
-                  <form action="ClasWS" method="POST">
+                  <form action="GeneroWS" method="POST">
                   <div class="row">
                     <div class="col-md-3 pr-md-1">
                       <div class="form-group">
@@ -16,21 +16,15 @@
                     </div>
                     <div class="col-md-5 pr-md-1">
                       <div class="form-group">
-                        <label>Classificação</label>
-                        <input type="text" class="form-control" name="txtClas" placeholder="Classificação" value="${obj.clas}">
+                        <label>Genero</label>
+                        <input type="text" class="form-control" name="txtGenero" placeholder="Genero" value="${obj.genero}">
                       </div>
-                     <div class="col-md-7">
-                    <div class="form-group-file">
-                        <label for="file">Foto</label>
-                        <input type="file" name="txtFoto" required class="form-control form-control-file" value="${obj.endFoto}">
-                    </div>
-                </div>
                     </div>
                   </div>
                     <button class="btn btn-primary btn-round text-center" type="submit">
                         <i class="tim-icons icon-cloud-upload-94"></i> Salvar
                     </button>
-                    <a class="btn btn-primary btn-round text-center" href="ClasWS?acao=list">
+                    <a class="btn btn-primary btn-round text-center" href="GeneroWS?acao=list">
                         <i class="tim-icons icon-bullet-list-67"></i> Listar
                     </a>
                 </form>
