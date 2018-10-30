@@ -30,7 +30,7 @@ import modelo.Livro;
  *
  * @author dappo
  */
-@WebServlet(name = "LivroWS", urlPatterns = {"/admin/genero/LivroWS"})
+@WebServlet(name = "LivroWS", urlPatterns = {"/admin/Livro/LivroWS"})
 public class LivroWS extends HttpServlet {
 
     private LivroDAO dao;
@@ -88,6 +88,10 @@ public class LivroWS extends HttpServlet {
                 dao = new LivroDAO();
                 Livro obj = dao.buscarPorChavePrimaria(Long.parseLong(id));
                 request.setAttribute("obj", obj);
+                request.setAttribute("listaA", this.listarA());
+                request.setAttribute("listaG", this.listarG());
+                request.setAttribute("listaE", this.listarE());
+                request.setAttribute("listaC", this.listarC());
                 pagina = "edita.jsp";
                 break;
             default:

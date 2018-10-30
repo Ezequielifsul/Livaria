@@ -17,19 +17,31 @@
                 <div class="col-md-5 pr-md-1">
                     <div class="form-group">
                         <label>Genero</label>
-                        <input type="text" name="txtGenero" required class="form-control" placeholder="Genero" >
+                        <select name="txtGenero">
+                             <c:forEach var= "objG" items= "${listaG}">
+                            <option value="${objG.id}">${obj.genero}</option>
+                            </c:forEach>
+                        </select>                   
                     </div>
                 </div>
                 <div class="col-md-5 pr-md-1">
                     <div class="form-group">
                         <label>Autor</label>
-                        <input type="text" name="txtAutor" required class="form-control" placeholder="Autor" >
+                        <select name="txtAutor">
+                             <c:forEach var= "objA" items= "${listaA}">
+                            <option value="${objA.id}">${objA.nomeA}</option>
+                            </c:forEach>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-5 pr-md-1">
                     <div class="form-group">
                         <label>Editora</label>
-                        <input type="text" name="txtEditora" required class="form-control" placeholder="Editora" >
+                        <select name="txtEditora">
+                             <c:forEach var= "objE" items= "${listaE}">
+                            <option value="${objE.id}">${objE.nomeE}</option>
+                            </c:forEach>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-5 pr-md-1">
@@ -41,7 +53,11 @@
                 <div class="col-md-5 pr-md-1">
                     <div class="form-group">
                         <label>Classificação</label>
-                        <input type="text" name="txtClas" required class="form-control" placeholder="Classificação" >
+                        <select name="txtGenero">
+                             <c:forEach var= "objC" items= "${listaC}">
+                            <option value="${objC.id}">${objC.clas}</option>
+                            </c:forEach>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-7">

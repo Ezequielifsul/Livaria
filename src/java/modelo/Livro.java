@@ -21,7 +21,7 @@ import javax.persistence.NamedQuery;
 @Entity
 @NamedQueries({
     @NamedQuery(name = "Livro.findAll", query = "SELECT l FROM Livro l"),
-    @NamedQuery(name = "Livro.findFilter", query = "SELECT l FROM Livro l WHERE l.titilo like :filtro l.genero.genero like :filtro l.autor.nomeA like :filtro l.editora.nomeE like :filtro l.classificacao.clas like :filtro")
+    @NamedQuery(name = "Livro.findFilter", query = "SELECT l FROM Livro l WHERE l.titulo like :filtro")
 })
 public class Livro implements Serializable {
 
